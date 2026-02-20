@@ -29,9 +29,17 @@ function App() {
           </div>
           <div className="input-section">
            <input id="task-input" className="task-input" type="text" placeholder="Add a new task..."  value={task} onChange={(e)=> setTask(e.target.value)}/>
-           <button>Add Task</button>
-            
+           <button onClick={addTask}>Add Task</button>  
           </div>
+          <ul className="task-list">
+            {tasks.map((task, index) => (
+              <li key={index} className="task-item">
+                {task}
+                <button className="delete-button" onClick={() => deleteTask(index)}>❌</button>
+              </li>
+            ))}
+          </ul>
+
         </div>
     </div>
   )
