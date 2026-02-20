@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
         <div className="app-container">
-          <div className="heading"><h1>To-Do List App</h1>
+          <div className="heading"><h1>To-Do List</h1>
           <p>Manage your tasks efficiently</p>
           </div>
           <div className="input-section">
@@ -34,10 +34,9 @@ function App() {
           <ul className="task-list">
             {tasks.map((task, index) => (
               <li key={index} className="task-item">
-                {task}
+                <span>{task}</span>
                 <button className="delete-button" onClick={() => deleteTask(index)}>❌</button>
-              </li>
-            ))}
+              </li>))}
           </ul>
 
         </div>
