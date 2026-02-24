@@ -2,6 +2,9 @@
 
 A simple and modern **To-Do List application** built using **React**.  
 It helps users add, view, and manage daily tasks efficiently with a clean UI and interactive design.
+This was build to try and learn the features of React Framework . It is a very basic web app made for learning purpose . 
+
+---THANK YOU--- 
 
 ---
 
